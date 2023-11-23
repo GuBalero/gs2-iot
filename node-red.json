@@ -1,0 +1,134 @@
+[
+    {
+        "id": "956bbc7599c42ea1",
+        "type": "tab",
+        "label": "GS2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "324676421607df8a",
+        "type": "inject",
+        "z": "956bbc7599c42ea1",
+        "name": "Liberador 1",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "0",
+        "payloadType": "str",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "7048df4f22e74728"
+            ]
+        ]
+    },
+    {
+        "id": "7048df4f22e74728",
+        "type": "mqtt out",
+        "z": "956bbc7599c42ea1",
+        "name": "",
+        "topic": "/gubalero/gs",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "124699527d620ddb",
+        "x": 650,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "71dc277105d8dc31",
+        "type": "inject",
+        "z": "956bbc7599c42ea1",
+        "name": "Liberador 2",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "1",
+        "payloadType": "str",
+        "x": 310,
+        "y": 360,
+        "wires": [
+            [
+                "7048df4f22e74728"
+            ]
+        ]
+    },
+    {
+        "id": "f9240735323d4046",
+        "type": "inject",
+        "z": "956bbc7599c42ea1",
+        "name": "Liberador 3",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "2",
+        "payloadType": "str",
+        "x": 310,
+        "y": 460,
+        "wires": [
+            [
+                "7048df4f22e74728"
+            ]
+        ]
+    },
+    {
+        "id": "124699527d620ddb",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]
